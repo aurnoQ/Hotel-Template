@@ -1,19 +1,8 @@
 import { defineConfig } from 'vite';
-
-// Attempt to load @vitejs/plugin-react if installed, otherwise fallback to esbuild automatic JSX
-let plugins = [];
-try {
-  const react = (await import('@vitejs/plugin-react')).default;
-  plugins.push(react());
-} catch {
-  // Fallback to Vite native esbuild JSX transformation
-}
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins,
-  esbuild: {
-    jsx: 'automatic',
-  },
+  plugins: [react()],
   server: {
     port: 5173,
     open: false,
