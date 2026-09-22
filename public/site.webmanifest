@@ -1,0 +1,12 @@
+{
+  "name": "SAVORA",
+  "short_name": "SAVORA",
+  "description": "Good food. Slow moments. SAVORA Café & Kitchen, New Delhi.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#241A17",
+  "theme_color": "#241A17",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
